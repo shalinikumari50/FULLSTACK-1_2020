@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(218, 212, 212);
+}
+
+div{
+    padding: 5px 15px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
