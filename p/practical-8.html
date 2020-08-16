@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            margin:15px;
+        }
+        .head{
+            width:100%;
+            height: 90px;
+            background-color: grey;
+            margin-bottom: 15px;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            position:fixed;
+            top:0;
+            z-index: 1;
+          
+        }
+        h1{
+            text-align:center;
+            margin-bottom: 15px;
+            color: white;
+            
+           
+        }
+        .section{
+            text-align:center;
+            margin-bottom: 15px;
+            color:black;
+            padding-top:110px;
+        }
+        .banner{
+            margin-top:110px;
+            width:100%;
+            height: 800px;
+            background-color: skyblue;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            position:relative;
+            text-align: center;
+        }
+        .section1{
+            
+            display:flex;
+            flex-direction:row;
+        }
+        .circle {
+            margin:5px auto; 
+            width:22%;
+            height: 300px;
+            background-color: gold;
+            border-radius: 50%;
+        }
+
+        .circle img{
+            width:100%;
+            height:100%;
+            border-radius:100%;
+        }
+        
+        .section2::after{
+            width:100%;
+            
+            content:' ';
+            display: block;
+            clear:both;
+        }
+        .mainContent{
+            width:49%;
+            height: 500px;
+            background-color: grey;
+            float:left;
+            display:flex;
+            
+        }
+        .projects{
+            width:49.5%;
+            height:500px;
+           
+            float:right;
+          
+            display:flex;
+            
+           
+           
+        }
+        .article{
+            width:100%;
+            height: 156px;
+            background-color: rgb(226, 143, 34);
+           
+            margin-bottom: 16px;
+            
+            
+           
+           
+            overflow:hidden;
+        }
+        .section3{
+            display:flex;
+            flex-direction:row;
+        }
+        .box{
+            
+            width:22%;
+            margin:5px auto; 
+            height:400px;
+            background-color: orangered;
+        }
+        .footer{
+            width:100%;
+          
+            background-color:plum;
+            text-align:center;
+            padding-top: 15px;
+            padding-bottom: 15px;;
+        }
+
+        .footer h4{
+            margin-bottom: 20px;
+        }
+        .footer a{
+           padding-bottom: 20px;
+        }
+        ul{
+            width:80%;
+            list-style:none;
+            display:flex;
+            justify-content: space-evenly;
+           
+
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul li a{
+            text-decoration:none;
+            padding: 15px 20px;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: x-large;
+        }
+        ul li a:hover{
+            background-color: white;
+            color:black;
+            font-weight: bold;
+        }
+        .banner h1{
+            color:white;
+            font-size: 70px;
+            position: absolute;
+  top: 8px;
+  left: 16px;
+        }
+        .article {
+          
+           
+            position:relative;
+            text-align: center;
+           
+        }
+        .article img{
+            overflow:hidden;
+        }
+        .article h2{
+            position: absolute;
+  top: 8px;
+  left: 40%;
+        }
+        .text h2{
+            padding-bottom:10px;
+            color:white;
+            margin-bottom: 15px;;
+        }
+        
+        .text p{line-height: 1.7;
+            text-align:justify;
+            font-size: 20px;
+            color:white;
+        }
+        .text{
+            padding:15px;
+        }
+        p{ margin-top: 16px;
+            text-align:justify;
+            
+            color:white;
+        }
+
+
+
+
+      
+        .card{
+            background-color: rgb(194, 190, 190);
+            text-align: center;
+            width:22%;
+            margin:5px auto; 
+          
+           
+            border-radius: 8px;
+          
+            float: left;
+            
+        }
+        .card .button{
+            
+            padding: 3% 0;
+            width:100%;
+            background-color: red;
+            border-radius: 8px;
+        }
+        .card img{
+            width:100%;
+            height: 25vh;
+           
+        
+        }
+        .card h3{
+            margin-top:5px;
+            color:black;
+            text-align:center;
+        }
+        .card p{
+            padding: 0 15px;
+            text-align:justify;
+            margin-bottom: 15px;
+        }
+        .card a{
+            text-decoration:none;
+            color:white;
+            font-size:medium;
+            text-align: center;
+            
+            
+        }
+        .card .button:hover{
+            background-color:blue;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="head" >
+        <ul >
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#team">TEAM</a></li>
+            <li><a href="#technology">TECHNOLOGIES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+    </div>
+    <div class="part1" id="home">
+        <div class="banner" id="top"><img src="../images/emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="banner" height=100% width=100%>
+        <h1 class="practical">PRACTICAL-8</h1>
+        </div></div>
+        <h1 class="section" id="team">Team Members</h1>
+        <div class="section1">
+            
+            <div class="circle"><img src="../images/1.png" alt="teamMember"></div>
+            <div class="circle"><img src="../images/2.png" alt="teamMember"></div>
+            <div class="circle"><img src="../images/3.png" alt="teamMember"></div>
+            <div class="circle"><img src="../images/9.png" alt="teamMember"></div>
+        </div><h1 class="section" id="about">About Us</h1>
+        <div class="part">
+        <div class="section2">
+            
+            <div class="mainContent">
+                <div class="text">
+                <h2>About Projects</h2>
+            <p >Capstone projects represent the culmination of a Fullstack student's hard work throughout the immersive program. These final projects are completed over the course of few months and integrate all of the technologies learned over the previous months (and often new ones).
+
+                Students work in teams of three to four people to develop impressive web/mobile applications, which serve as a centerpiece of a graduate's coding portfolio. 
+                These projects help in the understanding of various concepts and provides exposure to solve problems and learn new things. Self-learning plays an important role in building a successful project. Every project gives us the estimate of one's abilities. During the project building, the learning curve is exponential.</p>
+            </div></div>
+            <div class="projects">
+                <div class="articles">
+            <div class="article"><img src="../images/p1.jpg" alt="project1" width=100%> <h2>Project-1</h2></div>
+            <div class="article"><img src="../images/p2.jpeg" alt="project2"  width=100%><h2>Project-2</h2></div>
+            <div class="article"><img src="../images/p3.jpg" alt="project3" width=100%><h2>Project-3</h2</div>
+            </div></div>
+        </div></div>
+        <div class="tech">
+        
+        <h1 class="section" id="technology">Technologies Used</h1>
+        <div class="section3">
+            
+            <div class="card">
+                <img src="../images/What-is-HTML-HTML5.jpg" alt="img">
+                <h3>Introduction to HTML</h3>
+                <p>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.
+        
+                    Hypertext refers to the way in which Web pages (HTML documents) are linked together. Thus, the link available on a webpage is called Hypertext...</p>
+                <div class="button"><a href="practical-5-html.html">Read More</a></div>
+                
+            </div>
+            <div class="card">
+                <img src="../images/css.jpg" alt="img">
+                <h3>Introduction to CSS</h3>
+                <p>CSS is short for Cascading Style Sheets, and is the preferred way for setting the look and feel of a website. Cascading Style Sheets (CSS) is a markup language responsible for how your web pages will look like. It controls the colors, fonts, and layouts of your website...</p>
+                <div class="button"><a href="practical-5-css.html">Read More</a></div>
+            </div>
+            <div class="card">
+                <img src="../images/js.jpg" alt="img">
+                <h3>Introduction to JavaScript</h3>
+                <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation...</p>
+                <div class="button"><a href="practical-5-js.html">Read More</a></div>
+            </div>
+            <div class="card">
+                <img src="../images/bootstrap.png" alt="img">
+                <h3>Introduction to Bootstrap</h3>
+                <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components...</p>
+                <div class="button"><a href="practical-5-bootstrap.html">Read More</a></div>
+            </div>
+        </div></div>
+        <div class="section4">
+            <h1 class="section" id = "contact">Contact</h1>
+            <div class="footer"><h4>Website Template for Practical-8</h4>
+            <a href="#">Back To Top</a>
+            </div>
+        </div>
+        
+    
+</body>
+</html>
