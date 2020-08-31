@@ -13,18 +13,59 @@
             font-family: Arial, Helvetica, sans-serif;
         }
      
-
-        @media  (min-width: 801px) and (max-width: 1199px) {
         .head{
             width:100%;
+        
             height: 90px;
             background-color: grey;
-            margin-bottom: 15px;
             padding: 0 20px;
+            margin-bottom: 15px;
+        
             position:fixed;
             top:0;
             z-index: 1;
           
+        }
+        ul{
+           
+            list-style:none;
+            float:right;
+            
+        }
+        ul li{
+            display: inline-block;
+            line-height:90px;
+        }
+        ul li a{
+            text-decoration:none;
+            padding: 0 20px;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            
+        }  
+        ul li a:hover, .show-btn:hover, .hide-btn:hover{
+            color:skyblue;
+        }
+        .show-btn, .hide-btn, #chk{
+            font-size:30px;
+            color:white;
+            line-height:90px;
+            display:none;
+            transition:.4s;
+        }
+        .show-btn{
+            float:right;
+        }
+        #chk{
+            position:absolute;
+            visibility:hidden;
+            z-index:-10;
+        }
+        ul li a:hover{
+            background-color: white;
+            color:black;
+            font-weight: bold;
         }
         h1{
             text-align:center;
@@ -55,7 +96,7 @@
         .circle {
             margin:5px auto; 
             width:22%;
-            height: 300px;
+            height: 260px;
             background-color: gold;
             border-radius: 50%;
         }
@@ -113,47 +154,240 @@
         .footer a{
            padding-bottom: 20px;
         }
-        ul{
-            width:80%;
-            list-style:none;
-            float:right;
-            
-        }
-        ul li{
-            display: inline-block;
-            line-height:90px;
-        }
-        ul li a{
-            text-decoration:none;
-            padding: 0 20px;
-            display: block;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-           
-        }  
-        ul li a:hover, .show-btn:hover, .hide-btn:hover{
-            color:skyblue;
-        }
-        .show-btn, .hide-btn{
-            font-size:30px;
+      
+        .banner h1{
             color:white;
-            line-height:90px;
-            display:none;
-            transition:.4s;
+            font-size: 70px;
+            position: absolute;
+            top: 8px;
+            left: 16px;
         }
-        .show-btn{
-            float:right;
+        .article {
+            position:relative;
+            text-align: center;
         }
-        #chk{
-            position:absolute;
-            visibility:hidden;
-            z-index:-10;
+        .article img{
+            overflow:hidden;
         }
-        ul li a:hover{
-            background-color: white;
+        .article h2{
+            position: absolute;
+            top: 8px;
+            left: 40%;
+        }
+        .text h2{
+            padding-bottom:10px;
+            color:white;
+            margin-bottom: 15px;;
+        }
+        .text p{line-height: 1.7;
+            text-align:justify;
+            font-size: 20px;
+            color:white;
+        }
+        .text{
+            padding:15px;
+        }
+        p{ margin-top: 16px;
+            text-align:justify;
+            color:white;
+        }
+        .card{
+            background-color: rgb(194, 190, 190);
+            text-align: center;
+            width:22%;
+            margin:5px auto; 
+            border-radius: 8px;
+            float: left; 
+        }
+        .card .button{
+            padding: 3% 0;
+            width:100%;
+            background-color: red;
+            border-radius: 8px;
+        }
+        .card img{
+            width:100%;
+            height: 25vh;
+        }
+        .card h3{
+            margin-top:5px;
             color:black;
-            font-weight: bold;
+            text-align:center;
         }
+        .card p{
+            padding: 0 15px;
+            text-align:justify;
+            margin-bottom: 15px;
+        }
+        .card a{
+            text-decoration:none;
+            color:white;
+            font-size:medium;
+            text-align: center;
+        }
+        .card .button:hover{
+            background-color:blue;
+        }
+        
+        #container {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .head{
+        max-width: 1200px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+        @media  (min-width: 801px) and (max-width: 1199px) {
+            .head{
+            width:100%;
+            height: 90px;
+            background-color: grey;
+            margin-bottom: 15px;
+            padding: 0 20px;
+            position:fixed;
+            top:0;
+            z-index: 1;
+          
+        }   ul{
+           
+           list-style:none;
+           float:right;
+           
+       }
+       ul li{
+           display: inline-block;
+           line-height:90px;
+       }
+       ul li a{
+           text-decoration:none;
+           padding: 0 20px;
+           display: block;
+           font-family: Arial, Helvetica, sans-serif;
+           color: white;
+           
+       }  
+       ul li a:hover, .show-btn:hover, .hide-btn:hover{
+           color:skyblue;
+       }
+       .show-btn, .hide-btn, #chk{
+           font-size:30px;
+           color:white;
+           line-height:90px;
+           display:none;
+           transition:.4s;
+       }
+       .show-btn{
+           float:right;
+       }
+       #chk{
+           position:absolute;
+           visibility:hidden;
+           z-index:-10;
+       }
+       ul li a:hover{
+           background-color: white;
+           color:black;
+           font-weight: bold;
+       }
+        h1{
+            text-align:center;
+            margin-bottom: 15px;
+            color: white;     
+        }
+        .section{
+            text-align:center;
+            margin-bottom: 15px;
+            color:black;
+            padding-top:110px;
+        }
+        .banner{
+            margin-top:110px;
+            width:100%;
+            height: 800px;
+            background-color: skyblue;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            position:relative;
+            text-align: center;
+        }
+        .section1{     
+            display:flex;
+            flex-direction:row;
+        }
+        .circle {
+            margin:5px auto; 
+            width:22%;
+            height: 260px;
+            background-color: gold;
+            border-radius: 50%;
+        }
+        .circle img{
+            width:100%;
+            height:100%;
+            border-radius:100%;
+        }       
+        .section2::after{
+            width:100%; 
+            content:' ';
+            display: block;
+            clear:both;
+        }
+        .mainContent{
+            width:49%;
+            height: 500px;
+            background-color: grey;
+            float:left;
+            display:flex;        
+        }
+        .projects{
+            width:49.5%;
+            height:500px;
+            float:right;
+            display:flex;
+        }
+        .article{
+            width:100%;
+            height: 156px;
+            background-color: rgb(226, 143, 34);
+            margin-bottom: 16px;
+            overflow:hidden;
+        }
+        .section3{
+            display:flex;
+            flex-direction:row;
+        }
+        .box{    
+            width:22%;
+            margin:5px auto; 
+            height:400px;
+            background-color: orangered;
+        }
+        .footer{
+            width:100%;
+            background-color:plum;
+            text-align:center;
+            padding-top: 15px;
+            padding-bottom: 15px;;
+        }
+        .footer h4{
+            margin-bottom: 20px;
+        }
+        .footer a{
+           padding-bottom: 20px;
+        }
+     
         .banner h1{
             color:white;
             font-size: 70px;
@@ -229,7 +463,14 @@
         }
     }
     
-        @media(min-width:625px) and (max-width: 800px){
+
+
+
+
+
+
+
+        @media(min-width:650px) and (max-width: 800px){
             .head{
             width:100%;
             height: 90px;
@@ -241,62 +482,48 @@
             top:0;
             z-index: 1;
           
-        }ul li{
-            display:block;
-            padding:20px 0;
-            line-height:90px;
-        }
-        ul li a{
-            text-decoration:none;
-            padding: 0 20px;
-            display: block;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            
-        }  
-        ul li a:hover, .show-btn:hover, .hide-btn:hover{
-            color:skyblue;
-        }
-        .show-btn, .hide-btn{
-            font-size:30px;
-            color:white;
-            line-height:90px;
-            display:block;
-            transition:.4s;
-        }
-        .hide-btn{
-            position:absolute;
-            right:20px;
-            top:10px;
-            
         }
         ul{
-            position:fixed;
-            top:0;
-            right:-100%;
-            width:100%;
-            height:100vh;
-            text-align:center;
-            padding:80px 0;
-            transition:0.7s;
-            line-height:normal;
-        }
-        #chk:checked ~ ul{
-            right:0;
-        }
-     
-        .show-btn{
-            float:right;
-        }
-        #chk{
-            position:absolute;
-            visibility:hidden;
-            z-index:-10;
-        }
-        ul li a:hover{
-            background-color: white;
-            color:black;
-            font-weight: bold;}
+           
+           list-style:none;
+           float:right;
+           
+       }
+       ul li{
+           display: inline-block;
+           line-height:90px;
+       }
+       ul li a{
+           text-decoration:none;
+           padding: 0 20px;
+           display: block;
+           font-family: Arial, Helvetica, sans-serif;
+           color: white;
+           
+       }  
+       ul li a:hover, .show-btn:hover, .hide-btn:hover{
+           color:skyblue;
+       }
+       .show-btn, .hide-btn, #chk{
+           font-size:30px;
+           color:white;
+           line-height:90px;
+           display:none;
+           transition:.4s;
+       }
+       .show-btn{
+           float:right;
+       }
+       #chk{
+           position:absolute;
+           visibility:hidden;
+           z-index:-10;
+       }
+       ul li a:hover{
+           background-color: white;
+           color:black;
+           font-weight: bold;
+       }
         h1{
             text-align:center;
             margin-bottom: 15px;
@@ -327,7 +554,7 @@
         .circle {
             margin:5px auto; 
             width:22%;
-            height: 300px;
+            height: 260px;
             background-color: gold;
             border-radius: 50%;
         }
@@ -462,7 +689,17 @@
             background-color:blue;
         }
         }
-        @media(max-width:625px) {
+
+
+
+
+
+
+
+        @media(max-width:650px) {
+            #container {
+          min-width: 500px;
+        }
             .head{
             width:100%;
             height: 90px;
@@ -475,6 +712,68 @@
             z-index: 1;
           
         }
+        ul{
+          
+            background-color: #333;
+            position:fixed;
+            top:0;
+            right:-100%;
+            width:100%;
+            height:100vh;
+            text-align:center;
+            padding:80px 0;
+            transition:0.7s;
+            line-height:normal;
+           
+           
+      }
+      ul li{
+          display:block;
+          line-height:90px;
+      }
+      ul li a{
+          text-decoration:none;
+          padding: 0 20px;
+          display: block;
+          font-family: Arial, Helvetica, sans-serif;
+          color: white;
+          
+          
+         
+      }  
+      ul li a:hover, .show-btn:hover, .hide-btn:hover{
+          color:skyblue;
+      }
+      .show-btn, .hide-btn{
+          font-size:30px;
+          color:white;
+          line-height:90px;
+          float:right;
+          display:block;
+          transition:.4s;
+      }
+      .show-btn{
+          float:right;
+      }
+      .hide-btn {
+          display: block;
+          position: absolute;
+          right: 20px;
+          top: 10px;
+        }
+      #chk{
+          position:absolute;
+          visibility:hidden;
+          z-index:-10;
+      }
+      #chk:checked ~ ul{
+          right:0;
+      }
+      ul li a:hover{
+          background-color: white;
+          color:black;
+          font-weight: bold;
+      }
         h1{
             text-align:center;
             margin-bottom: 15px;
@@ -504,7 +803,7 @@
         .circle {
             margin:5px auto; 
             width:22%;
-            height: 300px;
+            height: 260px;
             background-color: gold;
             border-radius: 50%;
         }
@@ -562,47 +861,7 @@
         .footer a{
            padding-bottom: 20px;
         }
-        ul{
-            width:80%;
-            list-style:none;
-            float:right;
-            justify-content: space-evenly;
-        }
-        ul li{
-            display: inline-block;
-            line-height:90px;
-        }
-        ul li a{
-            text-decoration:none;
-            padding: 0 20px;
-            display: block;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-           
-        }  
-        ul li a:hover, .show-btn:hover, .hide-btn:hover{
-            color:skyblue;
-        }
-        .show-btn, .hide-btn{
-            font-size:30px;
-            color:white;
-            line-height:90px;
-            display:none;
-            transition:.4s;
-        }
-        .show-btn{
-            float:right;
-        }
-        #chk{
-            position:absolute;
-            visibility:hidden;
-            z-index:-10;
-        }
-        ul li a:hover{
-            background-color: white;
-            color:black;
-            font-weight: bold;
-        }
+        
         .banner h1{
             color:white;
             font-size: 70px;
@@ -678,229 +937,7 @@
         }
         }
 
-    .head{
-            width:100%;
-        
-            height: 90px;
-            background-color: grey;
-            padding: 0 20px;
-            margin-bottom: 15px;
-        
-            position:fixed;
-            top:0;
-            z-index: 1;
-          
-        }
-        h1{
-            text-align:center;
-            margin-bottom: 15px;
-            color: white;     
-        }
-        .section{
-            text-align:center;
-            margin-bottom: 15px;
-            color:black;
-            padding-top:110px;
-        }
-        .banner{
-            margin-top:110px;
-            width:100%;
-            height: 800px;
-            background-color: skyblue;
-            display:flex;
-            justify-content:center;
-            align-items: center;
-            position:relative;
-            text-align: center;
-        }
-        .section1{     
-            display:flex;
-            flex-direction:row;
-        }
-        .circle {
-            margin:5px auto; 
-            width:22%;
-            height: 300px;
-            background-color: gold;
-            border-radius: 50%;
-        }
-        .circle img{
-            width:100%;
-            height:100%;
-            border-radius:100%;
-        }       
-        .section2::after{
-            width:100%; 
-            content:' ';
-            display: block;
-            clear:both;
-        }
-        .mainContent{
-            width:49%;
-            height: 500px;
-            background-color: grey;
-            float:left;
-            display:flex;        
-        }
-        .projects{
-            width:49.5%;
-            height:500px;
-            float:right;
-            display:flex;
-        }
-        .article{
-            width:100%;
-            height: 156px;
-            background-color: rgb(226, 143, 34);
-            margin-bottom: 16px;
-            overflow:hidden;
-        }
-        .section3{
-            display:flex;
-            flex-direction:row;
-        }
-        .box{    
-            width:22%;
-            margin:5px auto; 
-            height:400px;
-            background-color: orangered;
-        }
-        .footer{
-            width:100%;
-            background-color:plum;
-            text-align:center;
-            padding-top: 15px;
-            padding-bottom: 15px;;
-        }
-        .footer h4{
-            margin-bottom: 20px;
-        }
-        .footer a{
-           padding-bottom: 20px;
-        }
-        ul{
-            width:80%;
-            list-style:none;
-            float:right;
-            justify-content: space-evenly;
-        }
-        ul li{
-            display: inline-block;
-            line-height:90px;
-        }
-        ul li a{
-            text-decoration:none;
-            padding: 0 20px;
-            display: block;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            
-        }  
-        ul li a:hover, .show-btn:hover, .hide-btn:hover{
-            color:skyblue;
-        }
-        .show-btn, .hide-btn{
-            font-size:30px;
-            color:white;
-            line-height:90px;
-            display:none;
-            transition:.4s;
-        }
-        .show-btn{
-            float:right;
-        }
-        #chk{
-            position:absolute;
-            visibility:hidden;
-            z-index:-10;
-        }
-        ul li a:hover{
-            background-color: white;
-            color:black;
-            font-weight: bold;
-        }
-        .banner h1{
-            color:white;
-            font-size: 70px;
-            position: absolute;
-            top: 8px;
-            left: 16px;
-        }
-        .article {
-            position:relative;
-            text-align: center;
-        }
-        .article img{
-            overflow:hidden;
-        }
-        .article h2{
-            position: absolute;
-            top: 8px;
-            left: 40%;
-        }
-        .text h2{
-            padding-bottom:10px;
-            color:white;
-            margin-bottom: 15px;;
-        }
-        .text p{line-height: 1.7;
-            text-align:justify;
-            font-size: 20px;
-            color:white;
-        }
-        .text{
-            padding:15px;
-        }
-        p{ margin-top: 16px;
-            text-align:justify;
-            color:white;
-        }
-        .card{
-            background-color: rgb(194, 190, 190);
-            text-align: center;
-            width:22%;
-            margin:5px auto; 
-            border-radius: 8px;
-            float: left; 
-        }
-        .card .button{
-            padding: 3% 0;
-            width:100%;
-            background-color: red;
-            border-radius: 8px;
-        }
-        .card img{
-            width:100%;
-            height: 25vh;
-        }
-        .card h3{
-            margin-top:5px;
-            color:black;
-            text-align:center;
-        }
-        .card p{
-            padding: 0 15px;
-            text-align:justify;
-            margin-bottom: 15px;
-        }
-        .card a{
-            text-decoration:none;
-            color:white;
-            font-size:medium;
-            text-align: center;
-        }
-        .card .button:hover{
-            background-color:blue;
-        }
-        
-        #container {
-      width: 100%;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .head{
-        max-width: 1200px;
-    }
+  
      
     </style>
 </head>
@@ -917,7 +954,7 @@
             <li><a href="#team">TEAM</a></li>
             <li><a href="#technology">TECHNOLOGIES</a></li>
             <li><a href="#contact">CONTACT</a></li>
-            <label for="chk" class="show-btn">
+            <label for="chk" class="hide-btn">
                 <i class="fa fa-times"></i>
             </label>
         </ul>
