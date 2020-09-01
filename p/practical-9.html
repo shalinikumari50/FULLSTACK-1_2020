@@ -323,13 +323,17 @@
             text-align: center;
         }
         .section1{     
-            display:flex;
-            flex-direction:row;
+            display:grid; 
+            grid: 300px/ auto auto;
+            
         }
+       
         .circle {
-            margin:5px auto; 
-            width:22%;
-            height: 260px;
+           
+          
+            width:300px;
+            float:left;
+            height: 280px;
             background-color: gold;
             border-radius: 50%;
         }
@@ -337,7 +341,12 @@
             width:100%;
             height:100%;
             border-radius:100%;
-        }       
+        }      .section1::after{
+            width:100%; 
+            content:' ';
+            display: block;
+            clear:both;
+        }    
         .section2::after{
             width:100%; 
             content:' ';
@@ -548,14 +557,17 @@
             text-align: center;
         }
         .section1{     
-            display:block;
-           
+            display:grid; 
+            grid: 300px/ auto auto;
+            
         }
+       
         .circle {
-            margin-left:8%; 
-            width:38%;
+           
+          
+            width:300px;
             float:left;
-            height: 260px;
+            height: 280px;
             background-color: gold;
             border-radius: 50%;
         }
@@ -803,11 +815,11 @@
             text-align: center;
         }
         .section1{     
-            display:block;
+            display:grid;
            
         }
         .circle {
-            margin-left:20%; 
+             
             width:55%;
             float:left;
             height: 300px;
@@ -978,12 +990,13 @@
         <h1 class="practical">PRACTICAL-9</h1>
         </div></div>
         <h1 class="section" id="team">Team Members</h1>
+        <div class="block">
         <div class="section1">
             
             <div class="circle"><img src="../images/1.png" alt="teamMember"></div>
             <div class="circle"><img src="../images/2.png" alt="teamMember"></div>
             <div class="circle"><img src="../images/3.png" alt="teamMember"></div>
-            <div class="circle"><img src="../images/9.png" alt="teamMember"></div>
+            <div class="circle"><img src="../images/9.png" alt="teamMember"></div></div>
         </div><h1 class="section" id="about">About Us</h1>
         <div class="part">
         <div class="section2">
