@@ -1,0 +1,81 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    
+    margin: 20px auto;
+    
+}
+table, tr{
+    border: 2px solid rgb(51,73,94);;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    
+}
+caption{
+    padding: 10px 20px;
+    background-color:rgb(51,73,94);
+    color:white;
+    font-weight: bold;
+    border: 2px solid rgb(51,73,94);;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+td{
+    border-bottom: 1px solid rgb(179, 178, 178);
+    padding: 8px 20px;
+    
+}
+th{
+    border-bottom: 2px solid rgb(179, 178, 178);
+    border-spacing: 0;
+    border-collapse: separate;
+    
+    padding: 10px 20px;
+}
+tr td:nth-child(n):not(:nth-child(2)) {
+  
+    text-align:center;
+  }
+
+a{
+    text-decoration:none;
+    color: grey;
+    text-align:center;
+}
+.status{
+    color: green;
+}
+
+.unchecked{
+    color:red;
+}
+
+tr:hover{
+    background-color:lightgrey;
+}
+
+.edit:hover {
+    color: blue;
+    transform:scale(1.5);
+    
+}
+
+.delete:hover {
+    color: red;
+    transform:scale(1.5);
+}
+.edit,.delete{
+    color:grey;
+}
+a:hover {
+    text-decoration: none;
+    color: green;
+}
