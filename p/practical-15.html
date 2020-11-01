@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-15</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        h1{
+            text-align: center;
+            color:white;
+        }
+        button{
+            width:50px;
+ height:50px;
+ text-align:center;
+            background-color:yellow;
+            font-size:40px;
+            
+        }
+        .centerDiv{
+            
+            
+            display:flex;
+            justify-content:center;
+            align-items: center;
+           
+        }
+        span{
+            display: inline-block;
+            padding: 10px 50px;
+            font-size: 40px;
+            color:yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>COUNTER</h1>
+    <div class="centerDiv">
+    <button id="decrease" onclick="decrement()" disabled>-</button>
+    <span id="counter"></span>
+    <button id="increase"  onclick="increment()">+</button>
+</div>
+<script>
+    var x = document.getElementById("decrease");
+    var y = document.getElementById("increase");
+    
+    var count =0;
+    document.getElementById("counter").innerHTML = count;
+
+    function CheckZero(){
+        if(count == 0){
+            document.getElementById("decrease").disabled = true;
+        }else{
+            document.getElementById("decrease").disabled = false;
+        }
+    }
+
+    function increment() {
+    count+=1;
+    document.getElementById("counter").innerHTML = count;
+    CheckZero();
+    } 
+    function decrement() {
+        count-=1;
+        document.getElementById("counter").innerHTML = count;  
+        CheckZero();
+    } 
+
+</script>
+</body>
+</html>
