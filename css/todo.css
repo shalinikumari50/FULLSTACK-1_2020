@@ -50,7 +50,7 @@ form button:hover{
 
 .todo-list{
     list-style:none;
-    width:25%
+    min-width:25%
 }
 
 .todo{
@@ -79,4 +79,14 @@ form button:hover{
 
 .delete-btn{
     background-color: palevioletred;;
+}
+
+.fa-check, .fa-trash{
+    pointer-events:none;
+}
+
+
+.completed{
+    text-decoration: line-through;
+    opacity:0.5;
 }

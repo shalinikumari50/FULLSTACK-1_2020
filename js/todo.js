@@ -27,3 +27,15 @@ function create(e){
 
     todoList.appendChild(newDiv);
 }
+
+function checkdelete(e){
+    var item = e.target;
+    if(item.classList[0]==="delete-btn"){
+        var parent = item.parentNode;
+        parent.remove();
+    }
+    if(item.classList[0]==="check-btn"){
+        var parent = item.parentNode;
+        parent.classList.toggle("completed");
+    }
+}
