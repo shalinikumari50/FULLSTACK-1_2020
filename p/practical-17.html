@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-17</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+    <style>
+*{
+    padding: 0px;
+    margin:0px;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    height:100vh;
+    text-align:center;
+}
+#time{
+    font-size: 8rem;;
+}
+h1,h2{
+    margin-bottom:1rem;
+}
+    </style>
+</head>
+<body>
+    <time id="time"></time>
+    <h1 id="greeting">Good Afternoon</h1>
+    <h2 id="name">Name</h2>
+    <h3 id="date"></h3>
+
+
+    <script>
+//selector
+const time=document.getElementById("time");
+const greeting=document.getElementById("greeting");
+const name=document.getElementById("name");
+const date=document.getElementById("date");
+
+
+//event handler
+
+//functions
+function showtime(){
+let today=new Date();
+let hour=today.getHours();
+let min=today.getMinutes();
+let sec=today.getSeconds();
+let todaydate=today.toDateString();
+const amPm=hour>12?'PM':'AM';
+hour=hour%12 || 12;
+date.innerHTML=`${todaydate}`;
+time.innerHTML=`${addzero(hour)}<span>:</span>${addzero(min)}<span>:</span>${addzero(sec)} ${amPm}`;
+setTimeout(showtime,1000);
+
+
+}
+function addzero(n){
+    return ((parseInt(n,10)<10?'0':'')+n);
+}
+
+
+//functional cal
+showtime();
+    </script>
+</body>
+</html>
