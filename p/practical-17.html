@@ -18,6 +18,8 @@ body{
     flex-direction:column;
     height:100vh;
     text-align:center;
+    
+    background-size: cover;
 }
 #time{
     font-size: 8rem;;
@@ -63,9 +65,47 @@ function addzero(n){
     return ((parseInt(n,10)<10?'0':'')+n);
 }
 
+function setGreeting(){
+    let today = new Date(2020,12,11,6,12,11);
+    let hour = today.getHours();
+    if(hour<12){
+        document.body.style.backgroundImage = 'url("../images/morning.jpg")';
+        greeting.innerHTML = 'Good Morning';
 
+    }else if(hour<18){
+        document.body.style.backgroundImage = 'url("../images/afternoon.jpg")';
+        greeting.innerHTML = 'Good Afternoon';
+    }else{
+        document.body.style.backgroundImage = 'url("../images/night.jpg")';
+        greeting.innerHTML = 'Good Evening';
+        document.body.style.color = "white";
+
+    }
+}
+// name.addEventListener('keypress', setName());
+function getName(){
+    if(localStorage.getItem('myData')===null){
+        name.innerHTML = "[Enter Name]";
+    }else{
+        name.innerHTML = localStorage.getItem('myData');
+    }
+}
+
+function setName(e){
+    if(e.type==='keypress'){
+        if(e.keyCode ==13){
+            localStorage.setItem('myData', e.target.innerHTML);
+            name.blur();
+        }else{
+            localStorage.setItem('myData', e.target.innerHTML);
+        }
+    }
+}
 //functional cal
 showtime();
+setGreeting();
+getName();
+setName();
     </script>
 </body>
 </html>
